@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  
+  <test name="Test">
+    <classes>
+      <class name="com.TestNGTutorials.TestNg_Include_Exclude">
+      
+         <methods>
+          <include name="testCase1"/>
+          <exclude name="testCase2"/>
+          <include name="testMobile.*"/>
+        
+         </methods>      
+      </class>
+    </classes>
+  </test> 
+  
+  <test name="dependencyTest">
+  <classes>
+  
+  <!--  <class name="com.TestNGTutorials.DependencyTests.WebsiteLoginTest"></class>
+    <class name="com.TestNGTutorials.DependencyTests.WebsiteLoginDependencyTest"></class>
+    <class name="com.TestNGTutorials.DependencyTests.DependsOnMultipleMethodsTest"></class>
+    
+    <class name="com.TestNGTutorials.TestNGAnnotationattributes.PriorityAttributeTest"></class>
+    <class name="com.TestNGTutorials.TestNGAnnotationattributes.TestNGTimeout"></class>
+     <class name="com.TestNGTutorials.TestNGAnnotationattributes.TestAnnotationAlwaysRunAttribute"></class>
+     <class name="com.TestNGTutorials.TestNGAnnotationattributes.InvocationCountAttrTest"></class>
+               <class name="com.TestNGTutorials.TestNGAnnotationattributes.invocationTimeOut"></class> -->
+               
+                <class name="com.TestNGTutorials.TestNGHardAssertions"></class>
+     
+  
+    
+    
+  </classes>
+  
+  </test>
+  
+  <test name="parametersTest">
+    
+      <parameter name="username" value="Jhon"/>
+      <parameter name="age" value="20"/>
+      <parameter name="mobilenumber" value="990123455"/>
+      <parameter name="Male" value="false"/>
+      
+      <classes>
+       <class name="com.TestNGTutorials.TestNG_Parameters"/>
+      </classes>
+   
+  </test>
+  
+  <test name="retryanalyzer">
+  
+  <classes>
+  
+    <class name="com.TestNGTutorials.TestNGRetryAnalyzer.RetryTest"/>
+  </classes>
+  </test>
+  
+  
+  <test name="dptest">
+  
+  <classes>
+  
+    <class name="com.TestNGTutorials.TestNGDataProvider.test_DataProvider1"/>
+  </classes>
+  </test>
+  
+  
+  
+  
+  <!-- Test -->
+</suite> <!-- Suite -->

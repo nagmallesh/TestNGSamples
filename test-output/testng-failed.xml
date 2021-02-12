@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="mobilenumber" value="990123455"/>
+  <parameter name="Male" value="false"/>
+  <parameter name="age" value="20"/>
+  <parameter name="username" value="Jhon"/>
+  <test name="dependencyTest(failed)">
+    <classes>
+      <class name="com.TestNGTutorials.TestNGDataProvider.test_DataProvider1">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.TestNGTutorials.TestNGDataProvider.test_DataProvider1 -->
+      <class name="com.TestNGTutorials.TestNGHardAssertions">
+        <methods>
+          <include name="testExportData"/>
+        </methods>
+      </class> <!-- com.TestNGTutorials.TestNGHardAssertions -->
+    </classes>
+  </test> <!-- dependencyTest(failed) -->
+  <test name="retryanalyzer(failed)">
+    <classes>
+      <class name="com.TestNGTutorials.TestNGDataProvider.test_DataProvider1">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.TestNGTutorials.TestNGDataProvider.test_DataProvider1 -->
+      <class name="com.TestNGTutorials.TestNGRetryAnalyzer.RetryTest">
+        <methods>
+          <include name="testRetry"/>
+        </methods>
+      </class> <!-- com.TestNGTutorials.TestNGRetryAnalyzer.RetryTest -->
+    </classes>
+  </test> <!-- retryanalyzer(failed) -->
+  <test name="dptest(failed)">
+    <classes>
+      <class name="com.TestNGTutorials.TestNGDataProvider.test_DataProvider1">
+        <methods>
+          <include name="init"/>
+          <include name="testStudentRecordsFromExcel"/>
+        </methods>
+      </class> <!-- com.TestNGTutorials.TestNGDataProvider.test_DataProvider1 -->
+    </classes>
+  </test> <!-- dptest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
